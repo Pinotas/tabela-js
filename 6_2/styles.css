@@ -1,76 +1,91 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
-  max-height: 100vh;
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+  z-index: -1;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff6b6b, #43c0cb);
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.4),
+    0 0 40px rgba(255, 146, 189, 0.4);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-.post {
-  width: 50%;
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.post h2 {
+  text-align: center;
+  margin-bottom: 30px;
   color: #333;
 }
 
-.post p {
-  color: #666;
-  line-height: 1.6;
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.comments {
-  margin-top: 20px;
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 16px;
 }
 
-.comment {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  background-color: #0b0b0b;
+textarea {
+  height: 150px;
 }
 
-.comment p {
-  color: #c3c3c3;
-  margin-top: 10px;
+button {
+  padding: 12px 40px;
+  background: linear-gradient(45deg, #ff6b6b, #ff92bd);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.comments .author {
+button:hover {
+  background: linear-gradient(45deg, #ff5252, #ff6fa3);
+}
+
+.commentClass {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.commentClass strong {
   font-weight: bold;
-  color: #337ab7; /* Blue color for author name */
+  color: #333;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+.commentClass p {
+  margin-top: 5px;
+  color: #666;
+}
+
+.post {
+  text-align: center;
 }
