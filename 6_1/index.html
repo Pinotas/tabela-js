@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Slideshow</h1>
+    <div class="slides">
+      <div class="slide fade active">
+        <img src="./montanhas verdes.jpg" />
+        <div class="caption">Mountains</div>
+      </div>
+      <div class="slide fade">
+        <img src="./praia.jpg" />
+        <div class="caption">Tropical</div>
+      </div>
+      <div class="slide fade">
+        <img src="./cidade.jpg" />
+        <div class="caption">City</div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="btn-pause">Pause</button>
+      <button id="btn-fwd">Forward</button>
+      <button id="btn-auto">Auto-play</button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
