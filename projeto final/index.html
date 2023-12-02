@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meu Blog</title>
+  </head>
+  <body>
+    <h1>Meu Blog</h1>
+
+    <div>
+      <label for="postTitle">Título:</label>
+      <input type="text" id="postTitle" />
+      <br />
+      <label for="postContent">Conteúdo:</label>
+      <textarea id="postContent"></textarea>
+      <br />
+      <label for="authorName">Seu Nome:</label>
+      <input type="text" id="authorName" />
+      <br />
+      <button onclick="criarPost()">Criar Post</button>
+    </div>
+
+    <div>
+      <h2>Posts Antigos</h2>
+      <input type="text" id="searchInput" placeholder="Pesquisar por título" />
+      <button onclick="pesquisarPosts()">Pesquisar</button>
+      <ul id="postList"></ul>
+    </div>
+
+    <script src="blog.js"></script>
+  </body>
+</html>
