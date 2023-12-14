@@ -1,0 +1,78 @@
+h1 {
+  text-align: center;
+  margin-top: 5%;
+}
+table {
+  margin: auto auto;
+  padding: 2px;
+  border: 1px solid black;
+  width: 80%;
+}
+
+th {
+  border: 1px solid black;
+  padding: 10px;
+  width: 33.33%;
+}
+
+.orange {
+  background-color: orange;
+  color: black;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  color: black;
+}
+
+#statusCell {
+  max-width: 100px;
+  height: 30px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#idCell {
+  text-align: center;
+  font-weight: bold;
+}
+
+#productCell {
+  text-align: center;
+}
+
+#productCell,
+ul {
+  list-style-type: disc; /* ou outro estilo desejado para os pontos da lista */
+  margin: 0;
+
+  display: flex; /* Usa display flex no container da lista */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  gap: 5px; /* Ajusta o espaçamento entre os itens da lista conforme necessário */
+}
+@media only screen and (min-width: 1279px) {
+  #productCell,
+  ul {
+    list-style-type: disc; /* ou outro estilo desejado para os pontos da lista */
+    margin: 0;
+    padding-left: 160px;
+    display: flex; /* Usa display flex no container da lista */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    gap: 5px; /* Ajusta o espaçamento entre os itens da lista conforme necessário */
+  }
+}

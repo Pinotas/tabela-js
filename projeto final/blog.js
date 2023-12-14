@@ -25,15 +25,16 @@ function exibirPosts() {
   const postList = document.getElementById("postList");
   postList.innerHTML = "";
 
-  posts.forEach((post) => {
+  for (let i = posts.length - 1; i >= 0; i--) {
+    const post = posts[i];
     const listItem = document.createElement("li");
     listItem.innerHTML = `
-            <strong>${post.title}</strong> - ${post.date}<br>
-            <em>Autor: ${post.author}</em><br>
-            ${post.content}
-        `;
+      <strong>${post.title}</strong> - ${post.date}<br>
+      <em>Autor: ${post.author}</em><br>
+      ${post.content}
+    `;
     postList.appendChild(listItem);
-  });
+  }
 }
 
 function limparCampos() {
