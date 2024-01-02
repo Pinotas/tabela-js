@@ -1,0 +1,54 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos da barra de pesquisa */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos dos posts */
+.post {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.post h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.post p {
+  font-size: 14px;
+}
+
+/* Estilos da área de novo post */
+.new-post textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.new-post button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

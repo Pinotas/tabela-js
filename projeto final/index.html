@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Meu Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto final JS</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Meu Blog</h1>
 
-    <div>
+    <div id="postDetails">
       <label for="postTitle">Título:</label>
       <input type="text" id="postTitle" />
       <br />
@@ -21,10 +22,17 @@
       <button onclick="criarPost()">Criar Post</button>
     </div>
 
-    <div>
+    <div class="posts-container">
       <h2>Posts Antigos</h2>
-      <input type="text" id="searchInput" placeholder="Pesquisar por título" />
-      <button onclick="pesquisarPosts()">Pesquisar</button>
+      <div id="searchSection">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Pesquisar por título"
+          oninput="pesquisarPosts()"
+        />
+        <button onclick="pesquisarPosts()">Pesquisar</button>
+      </div>
       <ul id="postList"></ul>
     </div>
 
